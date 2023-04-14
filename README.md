@@ -1,10 +1,6 @@
 # pxms
 backend of my wear store
-[Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
-
-[Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
-
-{username} — ваш ник на ГитХабе;
-{repository} — репозиторий где хранятся картинки;
-{branch} — ветка репозитория;
-{path} — путь к месту нахождения картинки.
+database schema of 8 tables
+![image](https://user-images.githubusercontent.com/96368452/231935545-d5ffaa53-adb4-4168-8d69-277c7ad96d1b.png)
+logic(?) schem
+![image](https://user-images.githubusercontent.com/96368452/231936027-9387ff12-a919-4780-89fa-481357cb5cd2.png)
