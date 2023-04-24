@@ -1,0 +1,22 @@
+name: Build Project
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0'
+    - name: Build
+      run: dotnet build backend --configuration Release
+    - name: InstallTools
+      run: dotnet tool install -g dotnet-format
+    - name: FormatTest
+      run: dotnet-format --folder --check --verbosity diagnostic
