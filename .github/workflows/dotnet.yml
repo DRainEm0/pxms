@@ -15,7 +15,7 @@ jobs:
       with:
         dotnet-version: '6.0'
     - name: Build
-      run: dotnet build backend --configuration Release
+      run: dotnet build BackendFolder --configuration Release
     - name: InstallTools
       run: dotnet tool install -g dotnet-format
     - name: FormatTest
