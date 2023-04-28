@@ -31,7 +31,7 @@ namespace BackendApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-           Account account = await _userService.GetById(id);
+            Account account = await _userService.GetById(id);
             return Ok(account.Adapt<GetUserResponse>());
         }
         /// <summary>
