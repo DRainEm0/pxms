@@ -19,7 +19,6 @@ namespace BackendApi
             builder.Services.AddDbContext<pxinxnmyschxxldxrsContext>(
             options => options.UseSqlServer(
                     "Server=DESKTOP-TEJVL2L; Database=testset; User Id=sa; Password=123;"));
-            
             builder.Services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddControllers();
