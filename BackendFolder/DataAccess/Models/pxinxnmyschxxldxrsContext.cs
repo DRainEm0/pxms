@@ -25,8 +25,6 @@ namespace DataAccess.Models
         public virtual DbSet<OrderItem> OrderItems { get; set; } = null!;
         public virtual DbSet<Review> Reviews { get; set; } = null!;
 
-       
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>(entity =>
