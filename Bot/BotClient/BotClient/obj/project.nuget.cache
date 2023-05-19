@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rix4sYel+U3moV7CDQigfATUYTwYBygzpzZcPI7FtxK+yrtEjsl/vSDkhxr/iqT/t9voPVAoS+TehHNjDGCObA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jucie\\Desktop\\pxms-main\\Bot\\BotClient\\BotClient\\BotClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jucie\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\jucie\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

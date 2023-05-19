@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a { color: inherit; } 
+
+body {
+    background-image: url("https://otkritkis.com/wp-content/uploads/2022/06/pdrb8.gif");
+    background-color: #FFFFF;
+    background-position-y: 106px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-attachment: fixed; 
+}
+
+.base-header {
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #000000;
+    color: #FF00FF;
+    position: fixed;
+    height: 122px;
+    width: 100%;
+}
+
+.base-header-title {
+    padding-left: 160px;
+    font-size: 44px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.base-header-navbar {
+    padding-left: 150px;
+    padding-right: 350px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #FFFFF;
+}
+
+.base-header-navbar-object {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.base-header-navbar-object:hover {
+    background-color: #FFFFF;
+}
+
+.base-header-logo {
+    padding: 17px;
+    position: fixed;
+    width: 100px;
+}
+
+.base-main {
+    background-color: #FFFFF;
+    height: calc(100vh - 306px);
+}
+
+.base-featured {
+    padding-top: 106px;
+    height: calc(100vh - 106px);
+}
+
+.base-featured-slogan {
+    font-family: 'IBM Plex Mono';
+    color: #FFFFF;
+    text-align: center;
+    font-size: 58px;
+    padding-top: 100px;
+}
+
+.base-featured-description {
+    font-family: 'IBM Plex Mono';
+    color: #FFFFF;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.base-featured-scroll {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: calc(100vh - 500px);
+}
+
+.base-footer {
+    position: static;
+    background-color: #FFFFF;
+    height: 200px;
+    width: 100%;
+}
+
+.base-footer-contacts {
+    padding: 20px;
+}
+
+.base-footer-contacts-text {
+    font-family: 'IBM Plex Mono';
+    color: #FFFFF;
+}
