@@ -91,7 +91,6 @@ namespace BotClient
                 replyMarkup: replyKeyboardMarkup,
                 cancellationToken: cancellationToken);
           }
-
             if (message.Text == "Картинка")
             {
                 Random rnd = new Random();
