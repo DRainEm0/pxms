@@ -90,9 +90,9 @@ namespace BotClient
                 text: answers[rnd.Next(0, answers.Length)],
                 replyMarkup: replyKeyboardMarkup,
                 cancellationToken: cancellationToken);
-          }
-           if (message.Text == "Картинка")
-           {
+            }
+            if (message.Text == "Картинка")
+            {
                 Random rnd = new Random();
                 string[] answers = new string[] {
                     "https://sun9-72.userapi.com/impg/riltBTFHuo5xXDa-ldKiijgMof2p9a5uCS_azw/76iZFGBWcDU.jpg?size=1026x800&quality=95&sign=fae7dfb33394bfa84a59c9cdd7fb7146&type=album",
