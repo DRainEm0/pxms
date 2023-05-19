@@ -82,7 +82,7 @@ namespace BotClient
             };
 
             if (message.Text == "Привет" || message.Text == "Здравствуйте"  || message.Text == "/start" )
-            {        
+            {
                 Random rnd = new Random();
                 string[] answers = new string[] { "Здравствуйте, уважаемый(ая)! ", "qq", "Опять людишки пишут.....", "привет всем няшкам ^w^", "Привет!!!" };
                 await botClient.SendTextMessageAsync(
