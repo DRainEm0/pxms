@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
@@ -52,8 +52,7 @@ namespace BotClient
             var result = await client.GetAsync("https://localhost:44356/api/Good");
             var test = await result.Content.ReadAsStringAsync();
             var r2 = await client.GetAsync("https://localhost:44356/api/Category");
-            var t2 = await r2.Content.ReadAsStringAsync();
-            
+            var t2 = await r2.Content.ReadAsStringAsync();            
         }
         static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
             CancellationToken cancellationToken)
@@ -83,8 +82,7 @@ namespace BotClient
             };
 
             if (message.Text == "Привет" || message.Text == "Здравствуйте"  || message.Text == "/start" )
-            {
-         
+            {        
                 Random rnd = new Random();
                 string[] answers = new string[] { "Здравствуйте, уважаемый(ая)! ", "qq", "Опять людишки пишут.....", "привет всем няшкам ^w^", "Привет!!!" };
                 await botClient.SendTextMessageAsync(
@@ -92,8 +90,7 @@ namespace BotClient
                 text: answers[rnd.Next(0, answers.Length)],
                 replyMarkup: replyKeyboardMarkup,
                 cancellationToken: cancellationToken);
-            }
-            
+            }    
 
             if (message.Text == "Картинка")
             {
