@@ -90,7 +90,7 @@ namespace BotClient
                 text: answers[rnd.Next(0, answers.Length)],
                 replyMarkup: replyKeyboardMarkup,
                 cancellationToken: cancellationToken);
-          }
+         }
           if (message.Text == "Картинка")
           {
                 Random rnd = new Random();
