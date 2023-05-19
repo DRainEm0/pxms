@@ -53,7 +53,7 @@ namespace BotClient
             var test = await result.Content.ReadAsStringAsync();
             var r2 = await client.GetAsync("https://localhost:44356/api/Category");
             var t2 = await r2.Content.ReadAsStringAsync();
-        }
+            }
             static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
             CancellationToken cancellationToken)
         {
@@ -73,7 +73,7 @@ namespace BotClient
             ReplyKeyboardMarkup replyKeyboardMarkup = new
             (
                 new[]
-                {
+               {
                     new KeyboardButton[] { "Картинка", "Стикер", "Видео", "Категория" },
                 }
             )
@@ -81,7 +81,7 @@ namespace BotClient
                 ResizeKeyboard = true
             };
 
-            if (message.Text == "Привет" || message.Text == "Здравствуйте"  || message.Text == "/start" )
+            if (message.Text == "Привет" || message.Text == "Здравствуйте"  || message.Text == "/start")
             {
                 Random rnd = new Random();
                 string[] answers = new string[] { "Здравствуйте, уважаемый(ая)! ", "qq", "Опять людишки пишут.....", "привет всем няшкам ^w^", "Привет!!!" };
