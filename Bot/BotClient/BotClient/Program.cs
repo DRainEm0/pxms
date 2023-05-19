@@ -52,8 +52,7 @@ namespace BotClient
             var result = await client.GetAsync("https://localhost:44356/api/Good");
             var test = await result.Content.ReadAsStringAsync();
             var r2 = await client.GetAsync("https://localhost:44356/api/Category");
-            var t2 = await r2.Content.ReadAsStringAsync();
-            }
+            var t2 = await r2.Content.ReadAsStringAsync();            }
         static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
             CancellationToken cancellationToken)
         {
