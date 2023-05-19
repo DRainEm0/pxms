@@ -53,9 +53,9 @@ namespace BotClient
             var test = await result.Content.ReadAsStringAsync();
             var r2 = await client.GetAsync("https://localhost:44356/api/Category");
             var t2 = await r2.Content.ReadAsStringAsync();
-            }
-            static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
-            CancellationToken cancellationToken)
+        }
+        static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update,
+        CancellationToken cancellationToken)
         {
             if (update.Type == UpdateType.CallbackQuery)
             {
@@ -81,7 +81,7 @@ namespace BotClient
                 ResizeKeyboard = true
             };
 
-            if (message.Text == "Привет" || message.Text == "Здравствуйте"  || message.Text == "/start")
+            if (message.Text == "Привет" || message.Text == "Здравствуйте" || message.Text == "/start")
             {
                 Random rnd = new Random();
                 string[] answers = new string[] { "Здравствуйте, уважаемый(ая)! ", "qq", "Опять людишки пишут.....", "привет всем няшкам ^w^", "Привет!!!" };
@@ -90,13 +90,12 @@ namespace BotClient
                 text: answers[rnd.Next(0, answers.Length)],
                 replyMarkup: replyKeyboardMarkup,
                 cancellationToken: cancellationToken);
-            }    
+           }
 
             if (message.Text == "Картинка")
             {
                 Random rnd = new Random();
-                string[] answers = new string[] 
-                {
+                string[] answers = new string[] {
                     "https://sun9-72.userapi.com/impg/riltBTFHuo5xXDa-ldKiijgMof2p9a5uCS_azw/76iZFGBWcDU.jpg?size=1026x800&quality=95&sign=fae7dfb33394bfa84a59c9cdd7fb7146&type=album",
                     "https://sun9-71.userapi.com/impg/90EbFec0Uc5rqYIWiZJ_4GLIp33dXEdhepnmUQ/ZM62WEafqNY.jpg?size=1139x1080&quality=96&sign=b69350a886c8dc97e45b8e0c185b4e4c&type=album",
                     "https://sun9-77.userapi.com/impg/I7Se2liq9_oGgEv5IcqMgrzfku7RKogNBXGV0Q/7mkghqH6Vi0.jpg?size=735x550&quality=95&sign=f5d749a0ddc159529a9ba3144b0cd3ff&type=album",
@@ -117,8 +116,7 @@ namespace BotClient
             if (message.Text == "Стикер")
             {
                 Random rnd = new Random();
-                string[] answers = new string[] 
-                {
+                string[] answers = new string[] {
                     "https://cdn.tlgrm.app/stickers/bd6/830/bd683093-2847-4c16-855c-a288f4009328/192/9.webp",
                     "https://tlgrm.ru/_/stickers/bd6/830/bd683093-2847-4c16-855c-a288f4009328/192/27.webp",
                     "https://tlgrm.ru/_/stickers/bd6/830/bd683093-2847-4c16-855c-a288f4009328/192/41.webp",
